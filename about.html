@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — Cafe Sienna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+   
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&h=800&fit=crop') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top:0; left:0; width:100%; height:100%;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      color: #fdfdfd;
+    }
+
+
+    .about {
+      padding: 60px 0;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+    .about-text h2 {
+      color: #6b4f3b;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+    .about-text h3 {
+      color: #6b4f3b;
+      margin-top: 25px;
+      font-size: 1.5rem;
+    }
+    .about-text p {
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+    .about-text ul.values {
+      list-style: none;
+      padding: 0;
+    }
+    .about-text ul.values li {
+      margin-bottom: 10px;
+      font-weight: 500;
+      position: relative;
+      padding-left: 20px;
+    }
+    .about-text ul.values li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      color: #6b4f3b;
+    }
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(107,79,59,0.2);
+    }
+
+
+    .team {
+      padding: 60px 0;
+      background-color: #fff8f2;
+      text-align: center;
+    }
+    .team h2 {
+      color: #6b4f3b;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .team p {
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+    }
+    .member {
+      background: #fffdfb;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(107,79,59,0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(107,79,59,0.25);
+    }
+    .member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+  display: block;       
+  margin: 0 auto 15px;
+    }
+    .member h4 {
+      color: #6b4f3b;
+      margin-bottom: 8px;
+    }
+    .member p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    /* Customer Experience Section */
+    .experience {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .experience h2 {
+      font-family: 'Playfair Display', serif;
+      color: #6b4f3b;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+    .experience p {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.7;
+    }
+    .quote {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #845f48;
+    }
+
+.footer p,
+.footer li {
+    line-height: 1.6;       
+margin-bottom: 0px; 
+}
+
+ 
+    .footer {
+      margin-top: 60px;
+      padding-top: 30px;
+      background-color: #fff8f2;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">
+      <a href="index.html"> Cafe Sienna</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <section class="about container">
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Our Story</h2>
+        <p>Cafe Sienna began as a simple idea to create a calm, welcoming space where neighbours and visitors could enjoy good coffee and kind service. We opened our doors with a small team and a big love for coffee.</p>
+        <p>We believe in simple, honest choices: careful brewing, fresh ingredients, and a friendly welcome. We work with local suppliers when possible and aim to make each visit a small, pleasant moment in the day.</p>
+        <h3>Vision</h3>
+        <p>To be the neighborhood cafe everyone turns to for comfort, creativity, and community. We aim to blend tradition with innovation, offering timeless coffee experiences in a modern, welcoming environment.</p>
+       
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=1000&h=800&fit=crop" alt="Cafe interior">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="experience container">
+    <h2>Our Experience</h2>
+    <p>Every visit to Cafe Sienna is more than just coffee. It's about cozy corners, friendly smiles, and the aroma of freshly roasted beans filling the air. We invite you to linger, chat, and savor every moment.</p>
+    <p class="quote">"Coffee is not just a drink, it’s a hug in a cup." — Cafe Sienna</p>
+  </section>
+
+
+  <section class="team container">
+    <h2>Meet the Team</h2>
+    <p>Our team is passionate, dedicated, and full of personality. Everyone contributes to the warm and welcoming atmosphere you’ll experience at Cafe Sienna.</p>
+    <div class="team-grid">
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" alt="Manager">
+        <h4>Edward - Manager</h4>
+        <p>Leads the daily service, ensures every guest feels at home, and brings a smile to every table.</p>
+      </div>
+     
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Pastry chef">
+        <h4>Jade - Pastry Chef</h4>
+        <p>Bakes fresh pastries daily, creating treats that pair perfectly with our coffee.</p>
+      </div>
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop" alt="Customer Service">
+        <h4>Olivia - Customer Service</h4>
+        <p>Ensures every customer interaction is warm, friendly, and memorable.</p>
+      </div>
+      <div class="member">
+        <img src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?w=400&h=400&fit=crop" alt="Barista assistant">
+        <h4>Isabella - Barista Assistant</h4>
+        <p>Supports the baristas, learns new techniques, and brightens your mornings.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <h3>Cafe Sienna</h3>
+      <p>Cozy coffee moments every day. Visit us for a warm cup, a quiet corner, and friendly service.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>123, Coffee Lane, Colombo</p>
+      <p>+94 77 123 4567</p>
+      <p>hello@cafesienna.com</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2025 Cafe Sienna • All rights reserved</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

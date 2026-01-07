@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — Cafe Sienna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+
+.contact-grid {
+  align-items: stretch;
+}
+
+.contact-info,
+.contact-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+
+.contact-form button {
+  margin-top: auto;
+}
+
+    body { font-family: 'Inter', sans-serif; color: #333; background: #fffdfb; margin: 0; line-height: 1.6; }
+    a { text-decoration: none; transition: 0.3s; }
+    a:hover { color: #6b4f3b; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    nav .logo a { font-weight: 700; font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #6b4f3b; }
+
+    .page-header { text-align: center; padding: 60px 0 40px; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #6b4f3b; margin-bottom: 15px; }
+    .page-header p { font-size: 1.2rem; color: #555; }
+
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; margin-bottom: 60px; align-items: start; }
+    .contact-info, .contact-form { background: #fff8f2; padding: 40px; border-radius: 12px; box-shadow: 0 8px 25px rgba(107,79,59,0.15); transition: transform 0.3s; }
+    .contact-info:hover, .contact-form:hover { transform: translateY(-5px); }
+
+    .contact-info h3, .contact-form h3 { color: #6b4f3b; margin-bottom: 20px; font-family: 'Playfair Display', serif; }
+    .contact-info p { margin-bottom: 10px; color: #555; }
+
+    .contact-info img { width: 100%; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 6px 20px rgba(107,79,59,0.1); }
+
+    form label { display: block; margin-bottom: 5px; color: #6b4f3b; font-weight: 600; }
+    form input, form textarea { width: 100%; padding: 12px; margin-bottom: 20px; border-radius: 8px; border: 1px solid #ccc; font-family: 'Inter', sans-serif; font-size: 1rem; }
+    .cta { display: inline-block; background: #6b4f3b; color: #fff; padding: 12px 25px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: 0.3s; }
+    .cta:hover { background: #8c6650; }
+
+    .map-container { margin-top: 40px; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(107,79,59,0.15); }
+    iframe { width: 100%; height: 350px; border: 0; }
+
+    .extra-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 50px; }
+    .extra-card { background: #fffdfb; padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 6px 20px rgba(107,79,59,0.1); transition: transform 0.3s; }
+    .extra-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(107,79,59,0.2); }
+    .extra-card img { width: 60px; margin-bottom: 15px; }
+    .extra-card h4 { color: #6b4f3b; margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+    .extra-card p { color: #555; font-size: 0.95rem; }
+
+    footer .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .footer h3, .footer h4 { color: #6b4f3b; margin-bottom: 15px; }
+    .footer p, .footer li a { color: #555; font-size: 0.95rem; }
+    .footer-bottom { text-align: center; margin-top: 30px; font-size: 0.9rem; color: #555; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo"><a href="index.html"> Cafe Sienna</a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="page-header">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Whether it’s a question, feedback, or just a hello, reach out to us below.</p>
+  </section>
+
+  <section class="contact-grid">
+    <div class="contact-info">
+      <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&h=600&fit=crop" alt="Cafe exterior">
+      <h3>Visit Cafe Sienna</h3>
+      <p><strong>Address:</strong> 123, Coffee Lane, Colombo</p>
+      <p><strong>Hours:</strong> Mon - Fri 7:00 - 20:00 • Sat - Sun 8:00 - 21:00</p>
+      <p><strong>Phone:</strong> +94 77 123 4567</p>
+      <p><strong>Email:</strong> hello@cafesienna.com</p>
+      <p>Find cozy corners, freshly brewed coffee, and a friendly smile waiting for you every day!</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send us a message</h3>
+      <form onsubmit="alert('Thank you! Your message was sent. (Form is demo-only)'); return false;">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required/>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required/>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+        <button class="cta" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.0000000000005!2d79.860000!3d6.927000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2590000000000%3A0x0000000000000000!2sCafe%20Sienna!5e0!3m2!1sen!2slk!4v1600000000000!5m2!1sen!2slk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+  <section class="extra-info">
+    <div class="extra-card">
+      <img src="https://img.icons8.com/color/96/coffee-to-go.png" alt="Coffee Icon"/>
+      <h4>Freshly Brewed</h4>
+      <p>Every cup is crafted with love, using our handpicked beans.</p>
+    </div>
+    <div class="extra-card">
+      <img src="https://img.icons8.com/color/96/cake.png" alt="Pastry Icon"/>
+      <h4>Daily Bakes</h4>
+      <p>Fresh pastries, cakes, and treats baked every morning.</p>
+    </div>
+    <div class="extra-card">
+      <img src="https://img.icons8.com/color/96/music.png" alt="Music Icon"/>
+      <h4>Events & Music</h4>
+      <p>Join us for live music, coffee workshops, and cozy evenings.</p>
+    </div>
+    <div class="extra-card">
+      <img src="https://img.icons8.com/color/96/wifi.png" alt="Wi-Fi Icon"/>
+      <h4>Free Wi-Fi</h4>
+      <p>Work, study, or relax with reliable internet in a cozy environment.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <h3>Cafe Sienna</h3>
+      <p>Cozy coffee moments every day. Visit us for warm drinks, sweet treats, and a welcoming space.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+	<p>123, Coffee Lane, Colombo</p>
+      <p>hello@cafesienna.com</p>
+      <p>+94 77 123 4567</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2025 Cafe Sienna • All rights reserved</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

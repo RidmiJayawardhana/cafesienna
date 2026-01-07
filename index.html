@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Home — Cafe Sienna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    
+    body { font-family: 'Inter', sans-serif; color: #333; background: #fffdfb; line-height: 1.6; margin: 0; }
+    a { text-decoration: none; transition: 0.3s; }
+    a:hover { color: #6b4f3b; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    .hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; align-items: center; margin-bottom: 60px; }
+    .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 3rem; color: #6b4f3b; margin-bottom: 15px; }
+    .hero-text p.lead { font-size: 1.2rem; margin-bottom: 20px; }
+    .hero-image img { width: 100%; border-radius: 12px; box-shadow: 0 8px 25px rgba(107,79,59,0.2); }
+
+    .features { display: flex; gap: 30px; justify-content: space-between; margin-bottom: 60px; flex-wrap: wrap; }
+    .feature { flex: 1 1 250px; background: #fff8f2; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 8px 20px rgba(107,79,59,0.1); transition: transform 0.3s; }
+    .feature:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(107,79,59,0.2); }
+    .feature h3 { color: #6b4f3b; margin-bottom: 10px; }
+    .feature p { color: #555; }
+
+    .menu-preview { margin-bottom: 60px; }
+    .menu-preview .section-head { text-align: center; margin-bottom: 40px; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; }
+    .menu-card { background: #fffdfb; border-radius: 12px; padding: 15px; text-align: center; box-shadow: 0 8px 20px rgba(107,79,59,0.1); transition: transform 0.3s; }
+    .menu-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(107,79,59,0.2); }
+    .menu-card img { width: 100%; border-radius: 12px; margin-bottom: 15px; }
+    .menu-card h4 { color: #6b4f3b; margin-bottom: 5px; }
+    .menu-card p { font-size: 0.95rem; margin-bottom: 8px; color: #555; }
+    .menu-card .price { font-weight: bold; color: #6b4f3b; }
+
+    .center-btn { text-align: center; margin-top: 20px; }
+    .cta, .secondary { display: inline-block; background: #6b4f3b; color: #fff; padding: 12px 25px; border-radius: 8px; font-weight: 600; transition: 0.3s; }
+    .secondary { background: #fff; color: #6b4f3b; border: 2px solid #6b4f3b; }
+    .cta:hover, .secondary:hover { background: #8c6650; color: #fff; border-color: #8c6650; }
+
+    .events-preview { margin-bottom: 60px; }
+    .events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .event-card { position: relative; background: #fff8f2; padding: 25px; border-radius: 12px; box-shadow: 0 8px 20px rgba(107,79,59,0.1); transition: transform 0.3s; }
+    .event-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(107,79,59,0.2); }
+    .event-card::before { content: ''; position: absolute; top: 15px; left: 15px; font-size: 1.5rem; } /* icon for Acoustic Sunday */
+    .event-card h4 { color: #6b4f3b; margin-bottom: 10px; }
+    .event-card p { color: #555; margin-left: 30px; } /* space for icon */
+
+    .gallery-preview { margin-bottom: 60px; text-align: center; }
+    .mini-gallery { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+    .mini-gallery img { width: 180px; border-radius: 12px; box-shadow: 0 6px 20px rgba(107,79,59,0.15); transition: transform 0.3s; }
+    .mini-gallery img:hover { transform: scale(1.05); }
+
+    .testimonials { background: #fff8f2; padding: 60px 0; text-align: center; margin-bottom: 60px; }
+    .testimonials h2 { color: #6b4f3b; font-family: 'Playfair Display', serif; margin-bottom: 20px; font-size: 2rem; }
+    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+    .testimonial { background: #fffdfb; padding: 25px; border-radius: 12px; box-shadow: 0 8px 20px rgba(107,79,59,0.1); transition: transform 0.3s; }
+    .testimonial:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(107,79,59,0.2); }
+    .testimonial p { font-style: italic; margin-bottom: 10px; }
+    .testimonial h4 { color: #6b4f3b; font-weight: 600; }
+
+    .newsletter { background: #6b4f3b; color: #fff; padding: 50px 20px; text-align: center; border-radius: 12px; margin-bottom: 60px; }
+    .newsletter input[type="email"] { padding: 12px; width: 250px; border-radius: 8px; border: none; margin-right: 10px; }
+    .newsletter button { padding: 12px 25px; border: none; border-radius: 8px; background: #fff; color: #6b4f3b; font-weight: 600; cursor: pointer; transition: 0.3s; }
+    .newsletter button:hover { background: #ffe8d8; }
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">
+      <a href="index.html"> Cafe Sienna</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      
+    
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<header class="hero container">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1>Warm cups. Quiet corners. Real moments.</h1>
+      <p class="lead">A cozy neighborhood cafe serving carefully brewed coffee, seasonal treats, and friendly smiles.</p>
+    
+    </div>
+    <div class="hero-image" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=1400&h=900&fit=crop" alt="Coffee and cozy interior">
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+
+  <section class="features">
+    <article class="feature">
+      <h3>Handpicked beans</h3>
+      <p>We select beans from trusted small farms and roast with care for full flavour.</p>
+    </article>
+    <article class="feature">
+      <h3>Comfort first</h3>
+      <p>Soft lighting, comfy seats, and free Wi‑Fi make our space ideal for work or rest.</p>
+    </article>
+    <article class="feature">
+      <h3>Fresh daily</h3>
+      <p>Baked goods made every morning—perfect alongside your drink.</p>
+    </article>
+  </section>
+
+
+  <section class="menu-preview">
+    <div class="section-head">
+      <h2>Customer favourites</h2>
+      <p>Some of our most-loved drinks and treats</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&h=700&fit=crop" alt="Cappuccino">
+        <h4>Cappuccino</h4>
+        <p>Espresso with steamed milk and a velvety foam top.</p>
+        <span class="price">LKR 950</span>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=900&h=700&fit=crop" alt="Latte">
+        <h4>Caramel Latte</h4>
+        <p>Smooth latte with house-made caramel syrup.</p>
+        <span class="price">LKR 1,100</span>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=900&h=700&fit=crop" alt="Cold Brew">
+        <h4>Cold Brew</h4>
+        <p>Slow-steeped for a clean, refreshing taste.</p>
+        <span class="price">LKR 800</span>
+      </div>
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=900&h=700&fit=crop" alt="Matcha">
+        <h4>Matcha Latte</h4>
+        <p>Ceremonial matcha whisked with steamed milk.</p>
+        <span class="price">LKR 1,000</span>
+      </div>
+    </div>
+    <div class="center-btn"><a href="menu.html" class="secondary">View Full Menu</a></div>
+  </section>
+
+
+  <section class="events-preview">
+    <div class="section-head">
+      <h2>Upcoming events</h2>
+      <p>Live music nights, coffee tastings, and community gatherings</p>
+    </div>
+    <div class="events-grid">
+      <article class="event-card">
+        <h4>Acoustic Sunday</h4>
+        <p>Relax and unwind with soft acoustic tunes from local musicians. Sunday, Nov 16, 5:00 PM</p>
+      </article>
+      <article class="event-card">
+        <h4>Latte Art Workshop</h4>
+        <p>Learn simple latte art techniques. A small fee applies. Saturday, Nov 8, 10:00 AM</p>
+      </article>
+    </div>
+    <div class="center-btn"><a href="events.html" class="secondary">See All Events</a></div>
+  </section>
+
+ 
+
+  <section class="testimonials">
+    <h2>What our customers say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"Best coffee in town! Cozy space and friendly staff make every visit special."</p>
+        <h4>— Nimal S.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I love their pastries and matcha lattes. A perfect morning ritual."</p>
+        <h4>— Anjali P.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"A little corner of happiness. Great for work or catching up with friends."</p>
+        <h4>— Kasun M.</h4>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter">
+    <h2>Stay in the loop</h2>
+    <p>Subscribe to our newsletter for updates, special offers, and events.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <h3>Cafe Sienna</h3>
+      <p>Cozy coffee moments every day. Visit us for a warm cup, a quiet corner, and friendly service.</p>
+     
+    </div>
+    <div class="footer-links">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>123, Coffee Lane, Colombo</p>
+      <p>+94 77 123 4567</p>
+      <p>hello@cafesienna.com</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2025 Cafe Sienna • All rights reserved</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

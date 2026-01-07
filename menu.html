@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<style>
+  h1, h2, h3, h4 {
+    color: #6b4f3b;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .menu-card .price {
+    color: #6b4f3b;
+    font-weight: 600;
+  }
+.footer p,
+.footer li {
+    line-height: 1.6;   /* space between lines */
+    margin-bottom: 0px; /* spacing below each paragraph or list item */
+}
+</style>
+
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Menu — Cafe Sienna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">
+      <a href="index.html"> Cafe Sienna</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="about.html" class="">About</a></li>
+      <li><a href="events.html" class="">Events</a></li>
+      
+      <li><a href="contact.html" class="">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+  <main>
+    <section class="page-header container">
+      <h1>Our Menu</h1>
+      <p>Simple, fresh, and made with care. Prices shown in LKR.</p>
+    </section>
+
+    <section class="menu-section container">
+      <h2>Hot Drinks</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&h=700&fit=crop" alt="Cappuccino">
+          <h4>Cappuccino</h4>
+          <p>Rich espresso with steamed milk and foam.</p>
+          <span class="price">LKR 950</span>
+        </div>
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=900&h=700&fit=crop" alt="Latte">
+          <h4>Latte</h4>
+          <p>Smooth espresso with steamed milk.</p>
+          <span class="price">LKR 1,000</span>
+        </div>
+        <div class="menu-card">
+          <img src="images/2.jpg?w=900&h=700&fit=crop" alt="Matcha">
+          <h4>Matcha Latte</h4>
+          <p>Ceremonial matcha with steamed milk.</p>
+          <span class="price">LKR 1,300</span>
+        </div>
+        <div class="menu-card">
+          <img src="images/1.png?w=900&h=700&fit=crop" alt="Mocha">
+          <h4>Mocha</h4>
+          <p>Espresso with chocolate and steamed milk.</p>
+          <span class="price">LKR 1,150</span>
+        </div>
+      </div>
+
+      <h2>Iced & Cold</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="images/3.jpg?w=900&h=700&fit=crop" alt="Cold Brew">
+          <h4>Cold Brew</h4>
+          <p>Slow-steeped for a smooth finish.</p>
+          <span class="price">LKR 1000</span>
+        </div>
+ <div class="menu-card">
+          <img src="images/4.jpg?w=900&h=700&fit=crop" alt="Cold Brew">
+          <h4>Iced Latte</h4>
+          <p>Espresso with cold milk.</p>
+          <span class="price">LKR 1200</span>
+        </div>
+        
+ <div class="menu-card">
+          <img src="images/5.jpg?w=900&h=700&fit=crop" alt="Cold Brew">
+          <h4>Iced Americano</h4>
+          <p>Espresso shots topped with cold water and served over ice.</p>
+          <span class="price">LKR 800</span>
+        </div>
+      </div>
+
+      <h2>Pastries & Breakfast</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="images/6.png?w=900&h=700&fit=crop" alt="Croissant">
+          <h4>Butter Croissant</h4>
+          <p>Flaky and buttery, baked fresh daily.</p>
+          <span class="price">LKR 350</span>
+        </div>
+      
+        <div class="menu-card">
+          <img src="images/7.jpg?w=900&h=700&fit=crop" alt="Muffin">
+          <h4>Daily Muffin</h4>
+          <p>Made fresh each morning; ask staff for today's flavour.</p>
+          <span class="price">LKR 400</span>
+        </div>
+ <div class="menu-card">
+          <img src="images/9.jpg?w=900&h=700&fit=crop" alt="Muffin">
+          <h4>Cookies</h4>
+          <p>Made fresh each morning; ask staff for today's flavour.</p>
+          <span class="price">LKR 200</span>
+        </div>
+      </div>
+
+      <h2>Specials & Sets</h2>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&h=700&fit=crop" alt="Coffee + croissant">
+          <h4>Morning Set</h4>
+          <p>Espresso drink + pastry. Great for a quick start.</p>
+          <span class="price">LKR 1,200</span>
+        </div>
+     <div class="menu-grid">
+        <div class="menu-card">
+          <img src="images/10.jpg?w=900&h=700&fit=crop" alt="Coffee + croissant">
+          <h4>Evening Set</h4>
+          <p>Iced Latte + Cookie. Great for a nice evening.</p>
+          <span class="price">LKR 1,300</span>
+        </div>        
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <h3>Cafe Sienna</h3>
+        <p>Cozy coffee moments every day. Visit us for a warm cup, a quiet corner, and friendly service.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+	<li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>123, Coffee Lane, Colombo</p>
+        <p>+94 77 123 4567</p>
+<p>hello@cafesienna.com</p>
+      </div>
+    </div>
+    <div class="container footer-bottom"><p>&copy; 2025 Cafe Sienna • All rights reserved</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

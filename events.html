@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Events — Cafe Sienna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    .events-hero {
+      background: url('https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?w=1500&h=800&fit=crop') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 8rem 1rem;
+      border-radius: 12px;
+      margin-bottom: 3rem;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.3);
+    }
+    .events-hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .events-hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .event-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    .event-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .event-info {
+      padding: 1.2rem;
+    }
+    .event-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #6b4f3b;
+      font-family: 'Playfair Display', serif;
+    }
+    .event-info p {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    .event-info a {
+      background: #6b4f3b;
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .event-info a:hover {
+      background: #8b654c;
+    }
+ 
+.footer p,
+.footer li {
+    line-height: 1.6;   
+    margin-bottom: 0px; 
+}
+  </style>
+</head>
+<body>
+  
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">
+      <a href="index.html"> Cafe Sienna</a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <section class="events-hero">
+    <h1>Events & Workshops</h1>
+    <p>Be part of our lively cafe community and enjoy coffee tastings, music nights, and creative workshops.</p>
+  </section>
+
+  <section class="events-grid">
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=1000&h=700&fit=crop" alt="Latte Art Workshop">
+      <div class="event-info">
+        <h3>Latte Art Workshop</h3>
+        <p>Learn to create beautiful latte art with our barista trainer. All materials provided. Saturday, Nov 8, 10:00 AM</p>
+        <a href="contact.html">Book a spot</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1489365091240-6a18fc761ec2?w=1000&h=700&fit=crop" alt="Acoustic Sunday">
+      <div class="event-info">
+        <h3>Acoustic Sunday</h3>
+        <p>Relax and unwind with soft acoustic tunes from local musicians. Sunday, Nov 16, 5:00 PM</p>
+        <a href="contact.html">Reserve a table</a>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=1000&h=700&fit=crop" alt="Coffee Tasting">
+      <div class="event-info">
+        <h3>Coffee Tasting</h3>
+        <p>Explore three single-origin coffees and discover their unique flavors. Wednesday, Nov 20, 6:30 PM</p>
+        <a href="contact.html">Sign up</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <h3>Cafe Sienna</h3>
+      <p>Cozy coffee moments every day. Visit us for a warm cup, a quiet corner, and friendly service.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+	<li><a href="about.html">About</a></li>
+	 <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+	<p>123, Coffee Lane, Colombo</p>
+      <p>hello@cafesienna.com</p>
+      <p>+94 77 123 4567</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2025 Cafe Sienna • All rights reserved</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
