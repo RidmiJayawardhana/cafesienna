@@ -31,7 +31,7 @@ body{font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#22
 
 .features {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 24px;
     margin: 28px auto;
     max-width: var(--max-width); /* same width as other sections */
